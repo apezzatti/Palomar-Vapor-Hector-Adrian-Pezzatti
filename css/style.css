@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-image: url(../img/vape2.png);
+	background-attachment: fixed;
+}
+
+/*APLICO ESTILOS A MI LOGO*/
+
+.container-fluid a img{
+	width: 10vw;
+	height: 18vh;
+	margin: 15px;
+	border-radius: 100%;
+	opacity: 70%;
+}
+
+
+/*BOTONERA PRINCIPAL*/
+
+.botoneraprincipal {
+	background-color: black;
+}
+
+	.botoneraprincipal ul li a{
+		color: white;
+		text-decoration: none;
+		font-family: 'Comfortaa', cursive;
+		font-size: 1.6rem;
+
+	}
+
+		.botoneraprincipal ul li a:hover{
+			color: yellowgreen;
+			font-weight: 600;
+		}
+
+			.botoneraprincipal .navbar-toggler-icon {
+			  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+			}
+
+				.botoneraprincipal .navbar-toggler {
+				  border-color: rgba(255, 0, 0, 0.85);
+				}
+
+/*APLICO ANIMACION AL HEADER*/
+.header{
+	height: 45vh;
+	animation-name: headerani;
+	background-size: cover;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	opacity: 88%;
+}
+
+/*HEADER*/
+
+@keyframes headerani{
+	0%{background-image: url(../img/header/header.png)}
+	25%{background-image: url(../img/header/header2.png)}
+	50%{background-image: url(../img/header/header3.png)}
+	75%{background-image: url(../img/header/header4.png)}
+	100%{background-image: url(../img/header/header5.png)}
+}
+
